@@ -4,11 +4,11 @@
 Welcome to FusionPBX Docker
 =========================
 
-| **FusionPBX** is an open source project that provides a customizable and
+**FusionPBX** is an open source project that provides a customizable and
 flexible web interface to the very powerful and highly scalable
-multi-platform voice switch called `FreeSWITCH`_.
+multi-platform voice switch called [FreeSWITCH](http://www.freeswitch.org/).
 
-| FusionPBX provides a GUI for for unlimited
+FusionPBX provides a GUI for for unlimited
 extensions, voicemail-to-email, music on hold, call parking, analog
 lines or high density T1/E1 circuits, and many other Features. FusionPBX
 provides the functionality that business need and provides corporate
@@ -23,7 +23,7 @@ Benefits of FusionPBX
 3. Gives your users and tenants an attractive GUI interface to interact with. 
 
 
-| FusionPBX provides:
+FusionPBX provides:
 
 * Call Block
 * Call Broadcast
@@ -47,11 +47,11 @@ Benefits of FusionPBX
 Our Eco-System
 --------------
 
-| We are a **global community** that has an open and **very friendly** eco-system.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
+We are a **global community** that has an open and **very friendly** eco-system.  We encourage community engagement, contribution and feedback. Please join us by getting involved with giving feedback, new feature ideas, helping out with code or Documentation.
 
 
 | Most of the core folks who develop and use FusionPBX can be found hanging out in Freenode IRC in the **#fusionpbx** channel. Come join us and meet the team.
 
-.. _FreeSWITCH: http://www.freeswitch.org
-.. _FusionPBX: http://www.fusionpbx.com
+[FreeSWITCH](http://www.freeswitch.org/)
+[FusionPBX](http://www.fusionpbx.com/)
 
