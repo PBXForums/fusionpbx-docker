@@ -1,4 +1,4 @@
-.. image:: https://github.com/fusionpbx/fusionpbx-docs/blob/master/source/_static/images/logo.png
+[logo]: https://github.com/fusionpbx/fusionpbx-docs/blob/master/source/_static/images/logo.png "FusionPBX Logo"
         :width: 130pt
         :align: center
         :height: 76.5pt
