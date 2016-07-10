@@ -22,8 +22,8 @@ docker ps
 ```
 This will produce output similar to:
 ```
-CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS               NAMES
-017c1a7397e1        digitaldaz/fusionpbx-docker   "/bin/sh -c '/usr/bin"   10 seconds ago      Up 7 seconds                            container-name-here
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS
+017c1a7397e1        digitaldaz/fusionpbx-docker   "/bin/sh -c '/usr/bin"   10 seconds ago      Up 7 seconds
 ```
 Replacing the Container ID with our own, and substituting mypassword with an appropriate one we do:
 ```
@@ -33,6 +33,11 @@ You will know this has been successful when it returns:
 ```
 ALTER ROLE
 ```
+We now need to visit the web interface to set up FusionPBX. In your browser put:
+```
+http://your-ip-here
+```
+
 
 About FusionPBX
 ---------------
