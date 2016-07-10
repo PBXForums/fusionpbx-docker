@@ -1,3 +1,4 @@
+![alt text][logo]
 [logo]: https://github.com/fusionpbx/fusionpbx-docs/blob/master/source/_static/images/logo.png "FusionPBX Logo"
 
 Welcome to FusionPBX Docs
