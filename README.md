@@ -1,5 +1,5 @@
 ![alt text][logo]
-[logo]: https://github.com/fusionpbx/fusionpbx-docs/blob/master/source/_static/images/logo.png "FusionPBX Logo"
+[logo]: https://raw.githubusercontent.com/fusionpbx/fusionpbx-docs/master/source/_static/images/logo.png "FusionPBX Logo"
 
 Welcome to FusionPBX Docker
 =========================
