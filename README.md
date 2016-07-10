@@ -11,7 +11,11 @@ First pull the image using the command:
 ```
 docker pull digitaldaz/fusionpbx-docker
 ```
-Once the image has downloaded do:  
+Once the image has downloaded:
+```
+docker run --net=host --privileged --name container-name-here -d digitaldaz/fusionpbx-docker
+```
+The placeholder container-name-here can be set to anything you like.
 
 
 About FusionPBX
