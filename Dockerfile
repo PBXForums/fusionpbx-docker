@@ -15,6 +15,7 @@ RUN apt-get update \
 		libtiff-tools \
 		nginx \
 		php5 php5-cli php5-fpm php5-pgsql php5-sqlite php5-odbc php5-curl php5-imap php5-mcrypt wget curl openssh-server supervisor net-tools\
+	&& apt-get clean \
 	&& git clone https://github.com/fusionpbx/fusionpbx.git /var/www/fusionpbx 
 
 RUN chown -R www-data:www-data /var/www/fusionpbx
@@ -33,7 +34,8 @@ RUN apt-get install -y --force-yes memcached freeswitch-meta-bare freeswitch-con
 	freeswitch-mod-sndfile freeswitch-mod-native-file freeswitch-mod-local-stream freeswitch-mod-tone-stream freeswitch-mod-lua freeswitch-meta-mod-say \
 	freeswitch-mod-xml-cdr freeswitch-mod-verto freeswitch-mod-callcenter freeswitch-mod-rtc freeswitch-mod-png freeswitch-mod-json-cdr freeswitch-mod-shout \
 	freeswitch-mod-skypopen freeswitch-mod-skypopen-dbg freeswitch-mod-sms freeswitch-mod-sms-dbg freeswitch-mod-cidlookup freeswitch-mod-memcache \
-	freeswitch-mod-imagick freeswitch-mod-tts-commandline freeswitch-mod-directory freeswitch-mod-flite
+	freeswitch-mod-imagick freeswitch-mod-tts-commandline freeswitch-mod-directory freeswitch-mod-flite\
+	&& apt-get clean
 RUN usermod -a -G freeswitch www-data \
 	&& usermod -a -G www-data freeswitch \
 	&& chown -R freeswitch:freeswitch /var/lib/freeswitch \
@@ -51,7 +53,8 @@ RUN usermod -a -G freeswitch www-data \
 	&& find /var/log/freeswitch -type d -exec chmod 2770 {} \;
 ENV PSQL_PASSWORD="psqlpass"  
 RUN password=$(dd if=/dev/urandom bs=1 count=20 2>/dev/null | base64) \
-	&& apt-get install -y --force-yes sudo postgresql 
+	&& apt-get install -y --force-yes sudo postgresql \
+	&& apt-get clean
 RUN service postgresql start \
 	&& sleep 10 \
 	&& echo "psql -c \"CREATE DATABASE fusionpbx\";" | su - postgres \
