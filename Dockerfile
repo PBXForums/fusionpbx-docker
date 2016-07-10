@@ -64,7 +64,7 @@ RUN service postgresql start \
 USER root
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY start-freeswitch.sh /usr/bin/start-freeswitch.sh
-#CMD bash -C '/sbin/my_init';'bash'
+VOLUME ["/var/lib/postgresql", "/etc/freeswitch", "/var/lib/freeswitch", "/usr/share/freeswitch", "/var/www/fusionpbx"]
 CMD /usr/bin/supervisord -n
 
 
