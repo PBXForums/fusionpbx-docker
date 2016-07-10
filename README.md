@@ -7,8 +7,10 @@ Welcome to FusionPBX Docker
 Usage
 -----
 
-First pull the image using the command:  
-> docker pull digitaldaz/fusionpbx-docker  
+First pull the image using the command:
+```
+docker pull digitaldaz/fusionpbx-docker
+```
 Once the image has downloaded do:  
 
 
