@@ -16,7 +16,7 @@ Once the image has downloaded:
 docker run --net=host --privileged --name container-name-here -d digitaldaz/fusionpbx-docker
 ```
 The placeholder container-name-here can be set to anything you like. This will start the container running, we now need to set the 
-database password. To do this we need to find the container id ans so we run:
+database password. To do this we need to find the container id and so we run:
 ```
 docker ps
 ```
@@ -24,6 +24,14 @@ This will produce output similar to:
 ```
 CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS               NAMES
 017c1a7397e1        digitaldaz/fusionpbx-docker   "/bin/sh -c '/usr/bin"   10 seconds ago      Up 7 seconds                            container-name-here
+```
+Replacing the Container ID with our own, and substituting mypassword with an appropriate one we do:
+```
+docker exec 017c1a7397e1 sudo -u postgres psql -c "ALTER USER fusionpbx WITH PASSWORD 'mypassword';"
+```
+You will know this has been successful when it returns:
+```
+ALTER ROLE
 ```
 
 About FusionPBX
