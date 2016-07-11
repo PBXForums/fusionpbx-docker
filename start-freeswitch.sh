@@ -5,6 +5,7 @@ while [ -z "`netstat -tln | grep 5432`" ]; do
   sleep 1
 done
 echo 'PostgreSQL started.'
+sleep 10
 
 # Start server.
 echo 'Starting Freeswitch...'
