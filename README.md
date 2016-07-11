@@ -16,7 +16,7 @@ Once the image has downloaded:
 docker run --net=host --privileged --name container-name-here -d digitaldaz/fusionpbx-docker
 ```
 The placeholder container-name-here can be set to anything you like. This will start the container running, we now need to set the 
-database password. To do this we need to find the container id and so we run:
+database password, to do this we need to find the container id and so we run:
 ```
 docker ps
 ```
