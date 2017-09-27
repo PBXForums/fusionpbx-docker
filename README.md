@@ -4,6 +4,8 @@
 Welcome to FusionPBX Docker
 =========================
 
+This probably no longer works!
+
 Usage
 -----
 
